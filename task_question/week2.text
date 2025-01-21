@@ -1,6 +1,7 @@
 1. Banking Management 
 
-The program should simulate basic banking operations with features like deposits, withdrawals, and balance checks, while ensuring withdrawals do not exceed the current balance.
+The program should simulate basic banking operations with features like deposits, withdrawals, and 
+balance checks, while ensuring withdrawals do not exceed the current balance.
 
 Requirements:
  a. Module Definition:
