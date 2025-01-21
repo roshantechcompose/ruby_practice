@@ -1,0 +1,69 @@
+Task: Create a Ruby program to manage a simple user profile and favorite items list.
+
+Requirements:
+1. User Input and Variables:
+    * Ask the user for their name, age, and favorite color. Store these in appropriate variables.
+    * Greet the user with a personalized message: "Hello [Name], aged [Age], who likes the color [Color]!"
+
+2. Conditional Logic:
+    * Check if the user is old enough to vote (18 years or older) and print a message:
+      * "You are eligible to vote!" if they are 18 or older.
+      * "You are not eligible to vote yet!" if they are under 18.
+
+3. Looping and Arrays:
+    * Ask the user to enter their five favorite foods, storing each food item in an array.
+    * After collecting all five foods, print the entire list with each item on a new line.
+
+4. Hashes and Symbols:
+   * Create a hash to store the user's profile with the following keys: :name, :age, :color, and :favorite_foods.
+   * Assign the previously gathered user data to the respective keys in the hash.
+
+5. Iterating and Displaying Data:
+   * Use a loop to display each key-value pair in the hash, formatted as:
+     * Name: [Name]
+     * Age: [Age]
+     * Favorite Color: [Color]
+     * Favorite Foods: [Food1, Food2, Food3, Food4, Food5]
+
+6. Bonus: Dynamic Hash Addition:
+   * Allow the user to add additional attributes to their profile dynamically. Prompt the user to enter a key and a value, convert the key to a symbol, and add it to the hash.
+   * After each addition, print the updated hash.
+_____________________________________________________________________________________________________________________________________________________________________________________________________________________
+Input/output example
+What is your name? Alice
+How old are you? 25
+What is your favorite color? Blue
+Hello Alice, aged 25, who likes the color Blue!
+
+You are eligible to vote!
+
+Enter your 5 favorite foods:
+1. Pizza
+2. Sushi
+3. Burgers
+4. Pasta
+5. Ice Cream
+
+Your favorite foods are:
+- Pizza
+- Sushi
+- Burgers
+- Pasta
+- Ice Cream
+
+Here is your profile:
+Name: Alice
+Age: 25
+Favorite Color: Blue
+Favorite Foods: Pizza, Sushi, Burgers, Pasta, Ice Cream
+
+Would you like to add more information to your profile? (yes/no) yes
+Enter the attribute name: hobby
+Enter the value for hobby: Reading
+
+Updated Profile:
+Name: Alice
+Age: 25
+Favorite Color: Blue
+Favorite Foods: Pizza, Sushi, Burgers, Pasta, Ice Cream
+Hobby: Reading

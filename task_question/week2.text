@@ -1,0 +1,83 @@
+1. Banking Management 
+
+The program should simulate basic banking operations with features like deposits, withdrawals, and balance checks, while ensuring withdrawals do not exceed the current balance.
+
+Requirements:
+ a. Module Definition:
+      * Define a module named TransactionLogger with methods to log deposit and withdrawal transactions.
+
+ b. Class Definition:
+      * Define a class named BankAccount that includes the TransactionLogger module.
+
+ c. Instance Variables:
+      * Use an instance variable @balance to keep track of the account balance, initialized to 0.0.
+      * Use an instance variable @transactions to keep a record of all transactions.
+
+ d. Methods:
+      * deposit(amount):
+         * Increases the account balance by the given amount if the amount is positive.
+         * Logs the transaction using a method from the TransactionLogger module.
+         * Print a message indicating the deposited amount and the new balance.
+
+      * withdraw(amount):
+         * Decreases the account balance by the given amount if the balance is sufficient and the amount is positive.
+         * Logs the transaction using a method from the TransactionLogger module.
+         * If the balance is insufficient, print an error message.
+
+      * check_balance: Prints the current account balance.
+      * print_transactions: Prints a list of all recorded transactions.
+
+ e. Validation:
+      * Ensure that the withdraw method does not allow the withdrawal of more money than is available in the account.
+________________________________________________________________________________________________________________________
+account = BankAccount.new
+account.deposit(100.0)     # Output: Deposited $100.00. New balance: $100.00.
+account.withdraw(30.0)     # Output: Withdrew $30.00. New balance: $70.00.
+account.check_balance      # Output: Current balance: $70.00.
+account.withdraw(100.0)    # Output: Insufficient funds. Current balance: $70.00.
+account.check_balance      # Output: Current balance: $70.00.
+account.print_transactions # Output: Transaction Log:
+                           #         Deposited $100.00
+                           #         Withdrew $30.00
+_____________________________________________________________________________________________________________________
+
+2. Student report card
+
+  * Objective: Create a Student class to manage students' marks and generate a report card that calculates and displays grades for different subjects. Utilize a module to encapsulate the grade calculation logic.
+
+  Requirements:
+    a. Module Definition:
+       * Define a module named GradeCalculator with the following methods:
+         * calculate_grade(mark): Returns a grade (A, B, C, D, F) based on the provided mark.
+         * calculate_average(marks): Calculates and returns the average mark from a hash of subject marks.
+    b. Class Definition:
+       * Define a class named Student that includes the GradeCalculator module.
+
+    c. Instance Variables:
+       * @name: Stores the student's name.
+       * @marks: Stores a hash of subjects and their corresponding marks.
+
+    d. Methods:
+      * initialize(name): Initializes the student's name and an empty hash for marks.
+      * add_mark(subject, mark): Adds a mark for the given subject. Validates that the mark is between 0 and 100. Prints a confirmation message for a valid mark or an error message for an invalid mark.
+      * display_grades: Prints the student's report card, including marks, individual grades for each subject, the average mark, and the overall grade.
+
+    e. Validation:
+      * Ensure marks added are within the range of 0 to 100.
+_____________________________________________________________________________________________________________________________________________________________________________________________________________________     
+input:
+student = Student.new("John Doe")
+student.add_mark("Math", 85)
+student.add_mark("Science", 92)
+student.add_mark("English", 78)
+student.display_grades
+
+Output:
+Added mark for Math: 85
+Added mark for Science: 92
+Added mark for English: 78
+Report Card for John Doe:
+  Math: Mark = 85, Grade = B
+  Science: Mark = 92, Grade = A
+  English: Mark = 78, Grade = C
+Average Mark: 85.00, Overall Grade: B
